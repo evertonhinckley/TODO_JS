@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="SHORTCUT ICON" href="imagens/icone_barra.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="login.js"></script>
+    <title>Login - Bom Gosto</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Tienne', serif;
+        }
+        div.l_esquerdo
+        {
+            background-color: #898989;
+            max-width:50%;
+            height: 947px;
+        }
+        img.icone_t_p_1
+        {
+            position: absolute;
+            top: 230px;
+            left: 150px;
+        }
+        div.l_direito
+        {
+
+            position: absolute;
+            left: 1330px;
+            top: 290px;
+        }
+        h3
+        {
+            padding: 15px 0 0 0;
+            color: #898989;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1
+        {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h2{
+            color: #898989;
+            font-size: 15px;
+        }
+        input#txt_usuario
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 35px;
+            border: 2px solid #898989;
+            padding: 10px;
+        }
+        input#txt_senha
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 35px;
+            border: 2px solid #898989;
+            padding: 10px;
+        }
+        input#radio_senha
+        {
+            margin: 15px 0 15px 0;
+        }
+        label
+        {
+            color: #898989;
+            font-size: 18px;
+        }
+        input#btn_acessar
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            margin: 0 0 25px 0;
+        }
+        
+        a
+        {
+            margin: 35px;
+            text-decoration: none;
+            color: #898989;
+            font-size: 15px;
+        }
+
+        .nav-wrapper
+        {
+            background-color: rgb(0, 0, 0);
+            border-bottom: 3px solid #898989;
+        }
+
+        .home_a:hover
+        {
+            color: #898989;
+        }
+
+        .registro_a:hover
+        {
+            color: #898989;
+        }
+
+        .fa-cog:hover
+        {
+            color: #898989;
+        }
+
+        .home_a, .registro_a
+        {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="l_esquerdo">
+            <img src="imagens/icone_barra.svg" class="icone_t_p_1" type="imagens/svg"/>
+        </div>
+        <div class="l_direito">
+            <h1>Login</h1>
+            <h2>Bem-Vindo ao Sistema do Restaurante</br> 
+                <font color="black">Bom Gosto</font</h2>
+            <h3>Usuario</h3>
+            <input type="text" id="txt_usuario"/>
+            <h3>Senha</h3>
+            <input type="password" id="txt_senha"/>
+            <br/>
+            <input type="radio" id="radio_senha" name="Lembre de Mim" value="Lembre de Mim"/><label for="Lembre de Mim"> Lembre de Mim</label>
+            <br/>
+            <input onclick="logar()" type="submit" id="btn_acessar" value="ACESSAR"/>
+            <br/>
+            <a href="cadastro_usuario.html" >Novo Usuario?</a>
+            <br/>
+            <a href="">Esqueceu sua senha?</a>
+        </div>
+    </section>
+</body>
+</html>

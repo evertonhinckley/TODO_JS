@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="SHORTCUT ICON" href="imagens/icone_barra.ico"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne:wght@400;700&display=swap" rel="stylesheet"/> 
+    <title>Home - Bom Gosto</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Tienne', serif;
+        }
+
+        div.barra_menu
+        {
+            background-color: black;
+            max-width: 3%;
+            height: 947px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .brand-logo
+        {
+            margin: 5px;
+        }
+
+        .nav-wrapper
+        {
+            background-color: rgb(0, 0, 0);
+            border-bottom: 3px solid #898989;
+        }
+
+        .home_a:hover
+        {
+            color: #898989;
+        }
+
+        .registro_a:hover
+        {
+            color: #898989;
+        }
+
+        .fa-cog:hover
+        {
+            color: #898989;
+        }
+
+        .home_a, .registro_a
+        {
+            font-size: 18px;
+        }
+
+        h1
+        {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 50px 0 25px 100px;
+        }
+
+        .id_ambiente
+        {
+            max-width: 11%;
+            border: 1px solid #898989;
+            border-radius: 10px;
+            margin: 5px 0 25px 100px;
+        }
+
+        .n_mesa
+        {
+            max-width: 11%;
+            border: 1px solid #898989;
+            border-radius: 10px;
+            margin: 5px 0 25px 100px;
+        }
+
+        .q_lugares
+        {
+            max-width: 11%;
+            border: 1px solid #898989;
+            border-radius: 10px;
+            margin: 5px 0 25px 100px;
+        }
+
+        .s_mesas
+        {
+            max-width: 11%;
+            border: 1px solid #898989;
+            border-radius: 10px;
+            margin: 5px 0 25px 100px;
+        }
+
+        label.label_d
+        {
+            font-size: 15px;
+            margin: 5px 0 0 100px;
+        }
+
+        .input_nome_c
+        {
+            width: 35%;
+            color: #898989;
+            margin: 5px 0 0 100px;
+        }
+
+        .btn
+        {
+            width: 150px;
+            height: 45px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: black;
+            position: relative;
+            top: 15px;
+            left: 100px;
+        }
+
+        .btn:hover
+        { 
+            background-color: #898989;
+        }
+
+        section#home
+        {
+            position: relative;
+            top: 35px;
+        }
+
+        .container
+        {
+            position: relative;
+            bottom: 210px;
+            left: 100px;
+            display: none;
+        }
+        p{
+            margin:15px;
+        }
+
+        .listas{
+            position: relative;
+            margin-bottom:10px;
+            left: 290px;
+            right: 50px;
+            border: 2px solid #898989;
+            border-top: 1px solid #898989;
+            max-width: 500px;
+            
+        }
+
+         .listas_cabecalho{
+            position: relative;
+            margin-top:-165px;
+            left: 290px;
+            right: 50px;
+            border: 2px solid #898989;
+            border-bottom: 1px solid #898989;
+            max-width: 950px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="imagens/icone_barra_1.svg"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" class="home_a">HOME</a></li>
+            <li><a href="registro.html" class="registro_a">REGISTROS</a></li>
+            <li><a href="configuracao.html"><i class="fas fa-cog"></i></a></li>
+        </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <h1>RESERVAS</h1>
+
+        <p><a class="waves-effect waves-light btn" id="btn_adcionar">ADCIONAR</a></p>
+        <p><a class="waves-effect waves-light btn" id="btn_salvar">SALVAR</a></p>
+        <p><a class="waves-effect waves-light btn" id="btn_cancelar">CANCELAR</a></p>
+
+        <div id="container" class="container" style="size:10px;">
+            <b><input type="text" name="ambiente">ID</input></b>
+            <b><input type="text" name="numeroMesa">PRODUTO</input></b>
+            <b><input type="text" name="qtdLugares">PREÇO</input></b>
+         </div>
+
+         <div class="listas_cabecalho">
+            <b><span style="margin:48px;" >ID</span></b>
+            <b><span style="margin:200px;">PRODUTO</span></b>
+            <b><span style="margin:30px;">PREÇO</span></b>
+         </div>
+         <table class="listas" class="bordered striped centered">
+            <tbody>
+                <tr id="listas">
+      
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

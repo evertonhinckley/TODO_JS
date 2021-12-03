@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="SHORTCUT ICON" href="imagens/icone_barra.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="cadastro_usuario.js"></script>
+    <title>Login - Bom Gosto</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Tienne', serif;
+        }
+        div.l_esquerdo
+        {
+            background-color: #898989;
+            max-width:50%;
+            height: 947px;
+        }
+        img.icone_t_p_1
+        {
+            position: absolute;
+            top: 230px;
+            left: 150px;
+        }
+        div.l_direito
+        {
+
+            position: absolute;
+            left: 1330px;
+            top: 290px;
+        }
+        h3
+        {
+            padding: 15px 0 0 0;
+            color: #898989;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1
+        {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h2{
+            color: #898989;
+            font-size: 15px;
+        }
+        input#nome
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 35px;
+            border: 2px solid #898989;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input#senha
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 35px;
+            border: 2px solid #898989;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input#email
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 35px;
+            border: 2px solid #898989;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        label
+        {
+            color: #898989;
+            font-size: 18px;
+        }
+        input#btn_cadastrar
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        a
+        {
+            margin: 35px;
+            text-decoration: none;
+            color: #898989;
+            font-size: 15px;
+        }
+
+        .nav-wrapper
+        {
+            background-color: rgb(0, 0, 0);
+            border-bottom: 3px solid #898989;
+        }
+
+        p
+        {
+            color: #898989;
+            font-size: 15px;
+        }
+
+        .registro_a:hover
+        {
+            color: #898989;
+        }
+
+        .fa-cog:hover
+        {
+            color: #898989;
+        }
+
+        .home_a, .registro_a
+        {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="l_esquerdo">
+            <img src="imagens/icone_barra.svg" class="icone_t_p_1" type="imagens/svg"/>
+        </div>
+        <div id="l_direito" class="l_direito">
+            <form method="post" action=""> 
+                <h1>Cadastro</h1> 
+                
+                <p> 
+                  <label for="nome_cad">Seu usuario</label>
+                </p>
+                <input id="nome" name="nome_cad" required="required" type="text" placeholder="LuizAugusto" />
+                
+                
+                <p> 
+                  <label for="email_cad">Seu e-mail</label>
+                </p>
+                 <input id="email" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+                
+                
+                <p> 
+                  <label for="senha_cad">Sua senha</label>
+                </p>
+                  <input id="senha" name="senha_cad" required="required" type="password" placeholder="1234"/>
+                
+                
+                <p> 
+                  <input onclick="cadastrar()" type="submit" value="Cadastrar" id="btn_cadastrar"/> 
+                </p>
+                
+                <p class="link">  
+                  Já tem conta?
+                  <a href="login.html"> Ir para Login </a>
+                </p>
+              </form>
+        </div>
+    </section>
+</body>
+</html>
